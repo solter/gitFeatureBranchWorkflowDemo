@@ -1,0 +1,161 @@
+ 1193  git checkout -b integration
+ 1194  git push origin integration
+ 1195  git checkout -b hotfix
+ 1196  git push origin hotfix
+ 1197  git checkout -b feature1
+ 1198  git push origin feature1
+ 1199  git checkout -b feature2
+ 1200  git push origin feature2
+ 1201  ls
+ 1202  hg vlog
+ 1203  git vlog
+ 1204  ls
+ 1205  ls application/
+ 1206  ls infrastructure/
+ 1207  ls
+ 1208  cd application/
+ 1209  ls
+ 1210  vim README.md 
+ 1211  ls
+ 1212  cd ..
+ 1213  ls
+ 1214  git rm infrastructure/README.md 
+ 1215  git status
+ 1216  git checkout -b main
+ 1217  git checkout main
+ 1218  git status
+ 1219  git add application/README.md 
+ 1220  git status
+ 1221  ls
+ 1222  git commit -m "Removed unnecessary clutter from repo"
+ 1223  ls
+ 1224  git help push
+ 1225  ls
+ 1226  git status
+ 1227  ls
+ 1228  git vlog
+ 1229  git checkout integration
+ 1230  git merge main
+ 1231  git checkout hotfix
+ 1232  git merge main
+ 1233  git checkout feature1
+ 1234  git merge main
+ 1235  git checkout feature2
+ 1236  git merge main
+ 1237  git vlog
+ 1238  git push origin --all
+ 1239  ls
+ 1240  git checkout feature2
+ 1241  ls
+ 1242  cd application/
+ 1243  ls
+ 1244  vim README.md 
+ 1245  git status
+ 1246  git add README.md 
+ 1247  git commit -m "Initial feature2 imp"
+ 1248  vim README.md 
+ 1249  git add README.md 
+ 1250  git status
+ 1251  git commit -m "Feature 2 updates"
+ 1252  git vlog
+ 1253  git checkout integration 
+ 1254  git merge feature2
+ 1255  git help push
+ 1256  git vlog
+ 1257  git push origin --all
+ 1258  git branch -d feature2
+ 1259  git help push
+ 1260  git push origin --prune
+ 1261  git vlog
+ 1262  git help push
+ 1263  git push --prune origin
+ 1264  git pull origin integration
+ 1265  git status
+ 1266  git branch -v
+ 1267  git push --set-upstream origin integration
+ 1268  git push --prune origin
+ 1269  git vlog
+ 1270  git push origin --delete feature2
+ 1271  git checkout feature1
+ 1272  ls
+ 1273  vim README.md 
+ 1274  git status
+ 1275  git add README.md 
+ 1276  git commit -m "Implementation of feature1"
+ 1277  vim README.md 
+ 1278  git status
+ 1279  git add README.md 
+ 1280  git commit -m "Feature 1 updates"
+ 1281  git status
+ 1282  git vlog
+ 1283  git vlog --all
+ 1284  git push origin feature1
+ 1285  git vlog --all
+ 1286  git rebase integration
+ 1287  vim README.md 
+ 1288  git add README.md 
+ 1289  git rebase --continue
+ 1290  ls
+ 1291  git vlog
+ 1292  vim README.md 
+ 1293  git push origin feature1 
+ 1294  git push -f origin feature1 
+ 1295  ls
+ 1296  git status
+ 1297  git checkout -b hotfix 
+ 1298  git merge hotfix 
+ 1299  git merge integration
+ 1300  git vlog
+ 1301  git checkout hotfix
+ 1302  git merge integration
+ 1303  git push origin hotfix
+ 1304  git checkout main
+ 1305  git merge hotfix
+ 1306  git vlog
+ 1307  git push origin main
+ 1308  ls
+ 1309  git checkout feature1
+ 1310  ls
+ 1311  vim README.md 
+ 1312  git add README.md 
+ 1313  git status
+ 1314  git commit -m "feature1 changes post-f2 merge"
+ 1315  vim README.md 
+ 1316  git add README.md 
+ 1317  git commit -m "more f1 updates"
+ 1318  git checkout integration
+ 1319  git merge feature1
+ 1320  git push origin feature1
+ 1321  git push origin integration
+ 1322  git checkout hotfix 
+ 1323  git merge feature1
+ 1324  git push origin hotfix
+ 1325  git checkout main
+ 1326  git merge feature1
+ 1327  git status
+ 1328  git vlog
+ 1329  git push origin main
+ 1330  git vlog --all
+ 1331  git branch -d feature1
+ 1332  git push origin --delete feature1
+ 1333  git checkout hotfix
+ 1334  ls
+ 1335  vim README.md 
+ 1336  git add README.md 
+ 1337  git status
+ 1338  git commit -m "found issue in feature2"
+ 1339  vim README.md 
+ 1340  git add README.md 
+ 1341  git status
+ 1342  git commit -m "feature2 fixed again"
+ 1343  git vlog
+ 1344  git checkout integration
+ 1345  git merge hotfix
+ 1346  git checkout main
+ 1347  git merge hotfix
+ 1348  hg push origin --all
+ 1349  git push origin --all
+ 1350  history | grep -e "git" -e "vim"
+ 1351  cd ..
+ 1352  ls
+ 1353  history > commands.log
