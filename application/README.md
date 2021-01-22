@@ -1,2 +1,3 @@
-# Application directory
-This directory hosts the code for the application managed by the project.
+# Dummy application
+This is a dummy file intended to represent an application as it is being developed.
+
