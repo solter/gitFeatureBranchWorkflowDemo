@@ -6,6 +6,7 @@ This represents the implementation of 'feature 1'
 with updates.
 
 and even more changes after merged with feature 2
+with updates
 
 # Feature 2
 This is the "feature 2" simulated implementation"
